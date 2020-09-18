@@ -1,0 +1,24 @@
+@import '../variables';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0 0 1rem;
+    justify-content: flex-end;
+    h1 {
+      margin: 0 auto 0 0;
+      font-size: 20px;
+    }
+    a {
+      text-decoration: none;
+      margin-left: 1rem;
+      &.active {
+        color: darken($dark-teal, 10);
+      }
+    }
+  }
+}
